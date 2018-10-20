@@ -9,7 +9,7 @@ if(isset($_GET['offset'])){
     $next = $_GET['offset'] + 5;
 
 
-//}
+}
 $json = file_get_contents('http://launchlibrary.net/1.4/launch/next/5?offset='.$_GET['offset']);
 $obj = json_decode($json, true);
 
@@ -113,4 +113,3 @@ foreach ($obj['launches'] as $value) {
 
 
     </center>
-
